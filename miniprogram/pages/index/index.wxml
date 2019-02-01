@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container {{theme}} {{ipx?'ipx':''}}">
+  <view id="theme" bindtap="changeTheme">变色</view>
+  <text class="log">{{log}}</text>
+</view>
+<view class="ipBarFix {{iphoneModel}} reference"></view>
+<view class="ipBarFix {{iphoneModel}}" style="top:{{ipBarFixTop}}px"></view>

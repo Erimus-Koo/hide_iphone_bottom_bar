@@ -1,0 +1,60 @@
+/**index.wxss**/
+
+.container {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 2em;
+  transition: 0.2s ease-in-out;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+.dark {
+  background: black;
+  color: white;
+}
+
+/* iphoneX padding for bottom bar */
+
+.ipx {
+  padding-bottom: 40px !important;
+}
+
+/* fake bottom bar with invert color */
+
+.ipBarFix {
+  background: white;
+  mix-blend-mode: difference;
+  position: fixed;
+  left: 50%;
+  z-index: 999;
+  border-radius: 9px;
+  /* bottom: 8px; */
+  height: 5px;
+}
+
+.ipBarFix.xr, .ipBarFix.xs.max {
+  width: 146px;
+  margin-left: -73px;
+}
+
+.ipBarFix.x, .ipBarFix.xs {
+  width: 132px;
+  margin-left: -66px;
+}
+
+/* 仅范例用 可以移除的css */
+
+#theme {
+  padding: 1em;
+  margin-bottom: 1em;
+  background: red;
+}
+
+.reference {
+  bottom: 100px !important;
+}
